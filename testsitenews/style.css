@@ -1,0 +1,351 @@
+body{
+   // background-color: red;
+}
+
+                                            /*header*/
+.header {
+    background-color: #343a40;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+}
+/*logo*/
+.header .logo {
+    text-align: center;
+    background-color: rgba(255,255,255, 1);
+}
+.header .logo img:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+/*admin panel + search*/
+.header .admin {
+    text-align: center;
+    color: white;
+    //display: inline-block;
+    //border: 1px solid white;
+    //width: 45%;
+    //height: 100%;
+}
+
+.header .searchHead p{
+    //text-align: center;
+    color: white;
+    margin-bottom: auto;
+    width: 70%;
+}
+
+.header .admin p {
+    font-family: Impact;
+    text-decoration: underline;
+    margin: auto;
+}
+/*reg-auth*/
+.header .reg a {
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    display: inline-block;
+    width: 70%;
+    height: 50%;
+}
+.header .reg a:hover {
+    //color: #262626;
+    font-size: 1.1em;
+    text-decoration: none;
+    background-color: #007bff;
+    border-radius: 10px;
+}
+.header .reg .logout {
+    margin-top: 5%;
+    margin-left: 5%;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.header .reg .logout:hover {
+    background-color: #007bff;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+.main .col-md-8 h2 {
+   margin-top: 100px;
+    margin-left: 20%;
+    text-shadow: 0 0 10px grey;
+    font-family: Impact;
+}
+    /*carousel news*/
+#carousel {
+    margin: auto;
+    width: 60%;
+}
+#carousel .carousel-item p {
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+    bottom: 100px;
+    background-color: rgba(0,0,0, 0.8);
+}
+
+        /*main category news*/
+.main .mainArticles .artCat, .category div {
+    border: 1px solid rgba(0,0,0, 0.8);
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: rgba(36, 52, 64, 0.03);
+}
+.main .mainArticles .artCat h3, .category div h3 {
+color: white;
+    font-family: Impact;
+   background-color: rgba(0,0,0, 0.8);
+}
+.category div h3 {
+    margin-top: 15%;
+}
+.main .mainArticles .artCat h3 a {
+    color: white;
+}
+.main .mainArticles .artCat p, .category div p {
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: 7px;
+}
+.main .mainArticles .artCat p a, .category div p a {
+    color: rgba(0,0,0, 0.8);
+}
+                                        /*footer*/
+.footer {
+    margin-top: 50px;
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+}
+.footer .myphoto img {
+    border-radius: 10%;
+    transition: 0.5s;
+    margin-top: 2px;
+}
+.footer aside {
+    text-align: right;
+}
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+}
+.footer a:hover {
+    text-decoration: underline;
+    text-shadow: -5px 5px 3px black;
+}
+.footer a:hover img {
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+.footer .myphoto img:hover {
+    border-radius: 20%;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 20px white;
+}
+
+                                    /*edit article page*/
+.article h2 {
+    margin-top: 100px;
+}
+.article p {
+    white-space: pre-wrap;
+    text-align: justify;
+}
+.article .articleDate {
+    margin-left: 70%;
+    text-align: right;
+    font-style: italic;
+    color: grey;
+    border-bottom: 1px solid grey;
+}
+
+    /*PAGES*/
+a.page {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    padding: 10px;
+    background-color: #00bf00;
+}
+.pages {
+    position: relative;
+    text-align: center;
+    border: none;
+}
+.pagesHover {
+    position: absolute;
+    min-width: 30%;
+    max-width: 35%;
+    padding: 15px
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    top: 10%;
+    left: 35%;
+   // display: none;
+    z-index: -20;
+    opacity: 0;
+    //background-color: #007bff;
+    transition: 1s;
+}
+.pages .wrapper {
+    display: inline-block;
+    border: none;
+}
+.pages .wrapper:hover .pagesHover {
+   // display: block;
+    opacity: 1;
+    z-index: 1;
+    background-color: #007bff;
+}
+
+    /*edit comments*/
+.article .comments .comment {
+    //color: white;
+    min-width: 30%;
+    display: inline-block;
+    padding: 5px 20px;
+    //background-color: #87bf89;
+    border-bottom: 2px solid #007bff;
+    border-radius: 10px;
+}
+.article .comments i.badge {
+    margin-top: 10px;
+   // border-bottom: 2px solid rgba(0,0,0, 0.7);
+    border-top: 2px solid #007bff;
+    font-size: 1.2em;
+}
+.article .comments .comment p {
+   // color: white;
+    font-family: "Comic Sans MS";
+    margin-bottom: 5px;
+   // background-color: rgba(0,0,0, 0.5);
+    padding: 0 2px 2px 0;
+    border-radius: 5px;
+}
+.article .comments .comment p span {
+    font-size: 2em;
+    color: #007bff;
+}
+.article .comments .comment i.date {
+    color: grey;
+   position: relative;
+    left: 40%;
+    font-size: 0.8em;
+    border-top: 0.8px solid rgba(0,0,0, 0.7);
+}
+
+/*sucess-unsucess edit*/
+p.badge {
+    font-size: 2em;
+    padding: 5px 10px;
+    margin-top: 100px;
+    margin-left: 20%;
+}
+                        /*edit registration/authorization/write page*/
+.registration, .authorization, .write {
+    background-color: rgba(52, 58, 64, 0.1);
+    margin-top: 10%;
+    border: 5px solid rgba(52, 58, 64, 0.3);
+    border-radius: 10px;
+}
+.registration h2, .authorization h2, .write h2 {
+    text-align: center;
+    font-family: "monospace", Serif;
+    font-weight: bolder;
+    color: white;
+    width: 40%;
+    background-color: rgba(52, 58, 64, 0.9);
+    border-radius: 10px;
+    margin: 10px auto;
+}
+.registration p, .authorization p, .write p {
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+
+
+
+
+
+
+
+.block {
+    margin-top: 120px;
+}
+.block div {
+    //margin-top: 120px;
+    text-align: center;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    transition: 0.4s;
+}
+.block p {
+    margin: 0;
+    padding: 0;
+}
+.block .magaz {
+    font-family: Impact;
+    font-size: 1.2em;
+    color: #343a40;
+}
+.block .price {
+    font-family: Impact;
+    font-size: 1.5em;
+    color: #343a40;
+    padding-top: 10px;
+}
+.block1 .discont {
+    font-size: 1.2em;
+    color: #343a40;
+    background-color: aquamarine;
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    left: -200px;
+    bottom: 20%;
+    transition: 3s;
+    opacity: 0;
+}
+.block2 .discont {
+    font-size: 1.2em;
+    color: #343a40;
+    background-color: aquamarine;
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    right: -200px;
+    bottom: 20%;
+    transition: 3s;
+    opacity: 0;
+}
+.block .discont span {
+    font-family: Impact;
+    font-size: 1.3em;
+    color: red;
+    //background-color: white;
+}
+.block1 div:hover .discont {
+    left: 0;
+    opacity: 0.9;
+    z-index: 111;
+}
+.block2 div:hover .discont {
+    right: 0;
+    opacity: 0.9;
+    z-index: 111;
+}
+.block div:hover {
+    background-color: #B6B7D9;
+    transform: scale(0.95);
+}
