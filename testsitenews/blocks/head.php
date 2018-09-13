@@ -20,6 +20,11 @@
     </script>
     <!-- свои css-стили -->
     <link href="style.css" rel="stylesheet">
+	<?php
+	if(empty($_SESSION) && isset($_POST['logout'])){
+		echo "<meta http-equiv='refresh' content='0.5' />";
+	}
+	?>
 </head>
 <body>
     <?php
